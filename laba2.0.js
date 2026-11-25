@@ -5,3 +5,6 @@ const grades = [
     { name: "Даша", score: 88 },
     { name: "Студент_X", score: 45 }
 ];
+function filterFailed(data, passScore) {
+    return data.filter(student => student.score < passScore).map(student => student.name);
+}
