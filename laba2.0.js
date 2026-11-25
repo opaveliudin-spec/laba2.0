@@ -11,6 +11,7 @@ function calculateAverage(data) {
     return total / data.length;
 }
 
+// Функция поиска лучшего студента (добавлена Анной)
 function findTopStudent(data) {
     return data.reduce((top, student) => student.score > top.score ? student : top, data[0]).name;
 }
